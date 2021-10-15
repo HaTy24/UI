@@ -1,0 +1,40 @@
+.subscribe {
+  padding-bottom: 67px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+  }
+
+  &-title {
+    font-size: 35px;
+  }
+  &-button {
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    padding: 17px 77px;
+    background-color: $color-button;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 100%;
+      left: 0;
+      background: rgba(245, 56, 56, 0.6);
+      filter: blur(40px);
+      border-radius: 10px;
+      z-index: -1;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      display: block;
+    }
+    &-left {
+      padding-bottom: 30px;
+    }
+  }
+}

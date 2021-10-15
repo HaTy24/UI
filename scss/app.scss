@@ -1,0 +1,80 @@
+@import "variable";
+@import "header";
+@import "hero";
+@import "intro";
+@import "feature";
+@import "plan";
+@import "huge";
+@import "epic";
+@import "customer";
+@import "subscribe";
+@import "footer";
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  padding: 13px 45px;
+  border: 1px solid;
+  border-radius: 50px;
+  text-decoration: none;
+  color: $color-button;
+}
+.button-full {
+  padding: 13px 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: $color-button;
+  color: #fff;
+}
+.title {
+  font-size: 35px;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+body {
+  font-family: $font;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $color-title;
+  line-height: 50px;
+}
+
+p,
+span {
+  color: $color-text;
+  line-height: 30px;
+}
+
+li {
+  list-style: none;
+  color: $color-text;
+  line-height: 30px;
+}

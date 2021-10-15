@@ -1,0 +1,36 @@
+.header {
+  padding-top: 50px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    color: $color-text;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    &-link {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  &-login {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+    .sign-in {
+      color: $color-title;
+      text-decoration: none;
+    }
+    .sign-up {
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    padding-top: 20px;
+    .menu {
+      display: none;
+    }
+  }
+}
