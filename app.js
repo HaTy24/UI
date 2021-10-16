@@ -22,7 +22,7 @@ function playtoscroll() {
   for (let i = 0; i < height.length; i++) {
     let WH = window.innerHeight;
     let top = height[i].getBoundingClientRect().top;
-    let RP = 150;
+    let RP = 125;
     console.log(WH);
     console.log(top);
     if (top < WH - RP) {

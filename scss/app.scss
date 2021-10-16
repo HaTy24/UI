@@ -52,11 +52,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
-    min-width: 736px;
-  }
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .button {
+    padding: 10px 20px;
+  }
+  .button-full {
+    padding: 10px 20px;
   }
 }
 
