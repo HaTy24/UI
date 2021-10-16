@@ -35,13 +35,13 @@
   }
   .intro {
     &-title {
-      line-height: 0;
-      padding-bottom: 5px;
+      line-height: normal;
     }
     &-text {
-      line-height: 0;
+      line-height: normal;
     }
   }
+
   @media screen and (max-width: 1023px) {
     &-container {
       display: flex;

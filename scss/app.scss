@@ -9,6 +9,8 @@
 @import "customer";
 @import "subscribe";
 @import "footer";
+@import "animation";
+@import "login";
 
 .wrapper {
   max-width: 1440px;
@@ -69,6 +71,7 @@ h4,
 h5 {
   color: $color-title;
   line-height: 50px;
+  font-weight: 500;
 }
 
 p,

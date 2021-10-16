@@ -1,9 +1,29 @@
 .header {
-  padding-top: 50px;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  padding-bottom: 10px;
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  img {
+    cursor: pointer;
+    animation: scale 2s linear infinite;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .menu {
     color: $color-text;
@@ -13,6 +33,10 @@
     &-link {
       color: inherit;
       text-decoration: none;
+      transition: 0.4s ease-in-out;
+    }
+    &-item :hover {
+      color: #000;
     }
   }
   &-login {
@@ -20,17 +44,62 @@
     align-items: center;
     gap: 30px;
     font-weight: 500;
+
     .sign-in {
       color: $color-title;
       text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .sign-in:hover {
+      transform: scale(1.1);
     }
     .sign-up {
+      transition: all 0.3s ease-in-out;
     }
+    .sign-up:hover {
+      transform: scale(1.1);
+    }
+  }
+  &-toggle {
+    display: none;
+    font-size: 25px;
   }
   @media screen and (max-width: 1023px) {
     padding-top: 20px;
     .menu {
-      display: none;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      top: 75px;
+      right: 0;
+      background-color: #ffec9e;
+      z-index: 99;
+      transform: translateY(-150%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s linear;
+      gap: unset;
+      &-item {
+        padding: 30px 0;
+        line-height: 0;
+      }
+    }
+
+    .active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toggle-scale {
+      transform: scale(1.2);
+      transition: 0.1s linear;
+    }
+
+    &-toggle {
+      display: inline;
     }
   }
 }
